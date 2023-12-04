@@ -13,9 +13,25 @@
 .header{
     display: flex;
     justify-content: center;
-    gap:10px;
+    gap:20px;
     font-family: Oswald-regular;
     font-size: min(36px,12px + 3vw , 12px + 3vh);
     color:wheat;
     padding:12px 24px;
+    background-color: brown;
+}
+.header-link:hover{
+    transition: 0.1s ease-in;
+    transform:translateY(-5px);
+}
+.header{
+    transition: 0.1s ease-in;
+    transform:translateY(0);
+}
+.content{
+    background-color: wheat;
+}
+.chosen-tab{
+    transition: 0.1s ease-in;
+    transform:translateY(-5px);
 }
