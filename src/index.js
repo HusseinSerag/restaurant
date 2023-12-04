@@ -1,4 +1,7 @@
 import './styles/styles.css'
+import { homeTab } from './home';
+import { menuTab } from './menu';
+import { contactTab } from './contact';
 
 //initial page 
 const content = document.querySelector('#content');
@@ -12,7 +15,15 @@ const contact = document.querySelector('[class$=contact]');
         home.classList.remove('chosen-tab')
         Array.from(content.children).forEach(child=>content.removeChild(child))
         tab.classList.add('chosen-tab')
-        content.appendChild()
     })
     
+})
+home.addEventListener('click',()=>{
+    content.appendChild(homeTab())
+})
+menu.addEventListener('click',()=>{
+    content.appendChild(menuTab())
+})
+contact.addEventListener('click',()=>{
+    content.appendChild(contactTab())
 })

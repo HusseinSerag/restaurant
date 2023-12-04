@@ -20,6 +20,7 @@
     padding:12px 24px;
     background-color: brown;
 }
+
 .header-link:hover{
     transition: 0.1s ease-in;
     transform:translateY(-5px);
@@ -28,8 +29,9 @@
     transition: 0.1s ease-in;
     transform:translateY(0);
 }
-.content{
+#content{
     background-color: wheat;
+
 }
 .chosen-tab{
     transition: 0.1s ease-in;
