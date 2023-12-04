@@ -2,13 +2,22 @@
     font-family: Oswald-regular;
     src: url('../../Oswald/Oswald-Regular.ttf');
 }
+@font-face {
+    font-family: Oswald-Bold;
+    src: url('../../Oswald/Oswald-Bold.ttf');
+}
+@font-face {
+    font-family: italianno;
+    src: url('../../Italianno/Italianno-Regular.ttf');
+}
 *{
     margin:0;
     padding:0;
     box-sizing: border-box;
 }
-#content{
-    background-color: brown;
+
+body{
+    background-color: wheat;
 }
 .header{
     display: flex;
@@ -25,15 +34,56 @@
     transition: 0.1s ease-in;
     transform:translateY(-5px);
 }
-.header{
-    transition: 0.1s ease-in;
-    transform:translateY(0);
-}
+
 #content{
-    background-color: wheat;
+    width:min(600px,100%);
+    margin:0 auto;
+    padding:20px;
+    
 
 }
-.chosen-tab{
-    transition: 0.1s ease-in;
-    transform:translateY(-5px);
+
+.homeContainer{
+    display: flex;
+    flex-direction: column;
+    color:wheat;
+    align-items: center;
+    background-color: brown;
+   gap:20px;
+    height: 80vh;
+    font-family: Oswald-Bold;
+    padding:15px;
+}
+.homeContainer .titleContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex:1;
+}
+.homeContainer h1{
+    
+    font-size: min(5rem,34px + 1vw);
+    text-align: center;
+}
+.homeContainer h4{
+    font-family: italianno;
+    text-align: center;
+    font-size: min(30px , 25px + 1vw);
+}
+.btn{
+    border: none;
+    padding:12px 24px;
+
+}
+.menu-btn{
+    color:brown;
+    background-color: wheat;
+    border-radius: 10px;
+    font-family: Oswald-regular;
+    font-size: min(1.2rem , 8px + 1.5vw);
+
+}
+.locationContainer{
+    font-size: min(1.2rem , 8px + 1.5vw);
 }
