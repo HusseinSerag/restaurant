@@ -1,0 +1,21 @@
+@font-face {
+    font-family: Oswald-regular;
+    src: url('../../Oswald/Oswald-Regular.ttf');
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+#content{
+    background-color: brown;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    gap:10px;
+    font-family: Oswald-regular;
+    font-size: min(36px,12px + 3vw , 12px + 3vh);
+    color:wheat;
+    padding:12px 24px;
+}
