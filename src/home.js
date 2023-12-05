@@ -2,7 +2,10 @@ import './styles/styles.css'
 import * as Controller from './index'
 import { menuTab } from './menu'
 export function homeTab(){
+    let opacity = document.createElement('div')
+    opacity.classList.add('opacity')
     let container = document.createElement('div')
+    container.appendChild(opacity)
     container.classList.add('homeContainer')
     let title =document.createElement('h1')
     let subTitle = document.createElement('h4')
