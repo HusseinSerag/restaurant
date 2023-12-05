@@ -106,7 +106,7 @@ body{
 .locationContainer{
     font-size: min(1.2rem , 8px + 1.5vw);
 }
-.menuMainContainer{
+.menuMainContainer , .contactContainer{
     position: relative;
    display: flex;
    flex-direction: column;
@@ -154,4 +154,27 @@ body{
 .itemName{
     font-weight: 900;
     font-size: min(36px,14px + 1vw);
+}
+
+.contactContainer h1{
+    font-size: min(36px , 18px + 3vw);
+    text-align: center;
+}
+.workDay{
+    display: flex;
+    flex-flow:column nowrap;
+    justify-content: center;
+    align-items: center;
+    font-size: min(24px, 11px + 1.5vw);
+}
+.contact-us{
+    display: flex;
+    flex-flow:column nowrap;
+    justify-content: center;
+    align-items: center;
+    font-size: min(24px, 11px + 1.5vw);
+
+}
+.contactContainer h1:last-of-type{
+    margin-top: 20px;
 }
